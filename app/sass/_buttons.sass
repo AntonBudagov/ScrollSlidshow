@@ -1,0 +1,29 @@
+.myBox
+  width: 170px
+  margin: 100px auto
+  padding: 10px 0
+  background-color: #d73f22
+  color: #fff
+  position: relative
+  text-align: center
+  transform: rotateX(-90deg) translate(0px,0%)
+  transform-style: preserve-3d
+  backface-visibility: hidden
+.myBoxB
+  width: 170px
+  position: absolute
+  top: 0
+  left: 0
+  transform-origin: center top
+  transform: rotateX(-90deg)
+  span
+    display: block
+    padding: 10px 0
+    background-color: #fff
+    border: 1px #d73f22 solid
+    color: #d73f22
+    transform: rotateX(180deg)
+
+
+#perspective
+  perspective: 900px

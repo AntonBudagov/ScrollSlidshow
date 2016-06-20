@@ -1,0 +1,91 @@
+#sliders-container
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+#slides
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  background-color: #222
+.slide
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.caption
+  position: absolute
+  bottom: 5%
+  right: 5%
+  text-align: right
+  color: #fff
+  font-weight: 700
+  h1
+    font-size: rem-calc(42)
+  p
+    font-size: rem-calc(24)
+
+#slide-1
+  background: url(/images/bg_slide-1.jpg) no-repeat center center
+  background-size: cover
+  transform: translate(0, 0)
+  .caption
+    color: #47373f
+
+#slide-2
+  background: url(/images/bg_slide-2.jpg) no-repeat center center
+  background-size: cover
+  transform: translate(0, 100%)
+
+#slide-3
+  background: url(/images/bg_slide-3.jpg) no-repeat center center
+  background-size: cover
+  transform: translate(100%, 100%)
+  .caption
+    left: 5%
+    right: auto
+    top: 5%
+    text-align: left
+
+#slide-4
+  background: url(/images/bg_slide-4.jpg) no-repeat center center
+  background-size: cover
+  transform: translate(100%, 0)
+  .caption
+    top: 5%
+    left: 5%
+    right: auto
+    text-align: left
+
+.red
+  background-color: $brandRed
+.blue
+  background-color: blue
+.yellow
+  background-color: $brendYellow
+.green
+  background-color: green
+
+#helper
+  position: absolute
+  left: 0
+  top: 0
+  height: 400%
+  width: rem-calc(20)
+
+.marker
+  height: 25%
+  width: 100%
+
+.buttonSection
+  position: absolute
+  bottom: 5%
+  right: 5%
+  text-align: left
